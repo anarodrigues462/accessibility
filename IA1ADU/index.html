@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Preenchimento de Lacunas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Preencha as Lacunas</h1>
+  <p>Arraste as palavras corretas para completar o texto.</p>
+  
+  <div id="text-container">
+    <p>A Maria é uma estudante do ensino secundário com perturbação de <span class="drop-zone" data-word="hiperatividade"></span> e défice de atenção.
+    <br> Ela tem dificuldade em ler, mas gosta das aulas de literatura. A sua escola começou a usar livros didáticos online.
+    <br>Inicialmente, ela estava preocupada em usar esse novo formato, mas ao usar um software de conversão de texto em <span class="drop-zone" data-word="em fala"> 
+    <br>
+  </div>
+
+  <div id="word-bank">
+    <span class="draggable" draggable="true" data-word="hiperatividade">hiperatividade</span>
+    <span class="draggable" draggable="true" data-word="texto">em fala</span>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
