@@ -1,40 +1,61 @@
 body {
-    font-family: 'Montserrat';
-    text-align: center;
-  }
-  
-  #title-container {
-    margin: 1em;
-    font-size: 2em;
-  }
+  font-family: 'Montserrat';
+  text-align: center;
+  background-color: white;
+  color: black;
+}
 
-  #text-container {
-    display: inline-block;
-    text-align: left;
-    letter-spacing: 0.1em;
-    line-height: 2em;
-    width: 60em;
-  }
-  
-  .drop-zone {
-    display: inline-block;
-    width: 10px;
-    padding: 5px;
-    margin: 0 5px;
-    border-bottom: 2px solid #333;
-  }
-  
-  #word-bank {
-    margin-top: 20px;
-  }
-  
-  .draggable {
-    display: inline-block;
-    padding: 10px;
-    margin: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 4px;
-    cursor: move;
-  }
-  
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#title-container {
+  margin: 1em;
+  font-size: 2em;
+}
+
+#text-container {
+  display: inline-block;
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  width: 60em;
+}
+
+.drop-zone {
+  display: inline-block;
+  width: 10px;
+  padding: 5px;
+  margin: 0 5px;
+  border-bottom: 2px solid #333;
+}
+
+#word-bank {
+  margin-top: 20px;
+}
+
+.draggable {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: move;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #fff;
+}
+
+[color-mode="light"] {
+  --primary-color: #333;
+  --secondary-color: #fff;
+}
+
+[color-mode="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}

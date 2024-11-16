@@ -46,3 +46,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     updateContent(langData);
     togglePortugueseStylesheet(userPreferredLanguage);
 });
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }

@@ -5,8 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tradução de texto</title>
         <link rel="stylesheet" href="css/styleEN.css">
+        <link id="theme-stylesheet" rel="stylesheet" href="css/light.css">
         <script src="scriptTRD.js"></script>
         <!-- Other meta tags and stylesheets -->
+
+        <style>
+            /* Adicione estilos básicos aqui para caso o CSS falhe */
+            body {
+                font-family: 'Montserrat';
+                background-color: white;
+                color: black;
+            }
+        </style>
+
     </head>
     <body>
         <nav>
@@ -20,6 +31,7 @@
             </ul>
         </nav>
         <main>
+            <button onclick="myFunction()">Toggle dark mode</button>
             <h1 id="title-container" data-i18n="welcome-message">Middle school student with attention deficit hyperactivity disorder and dyslexia</h1>
             <p id="text-container" data-i18n="text">Pretty is a middle school student with attention deficit hyperactivity disorder with dyslexia.</p>
         </main>
