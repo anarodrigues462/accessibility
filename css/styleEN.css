@@ -4,8 +4,16 @@ body {
   }
   
   #title-container {
-    margin: 20px;
-    font-size: 1.2em;
+    margin: 1em;
+    font-size: 2em;
+  }
+
+  #text-container {
+    display: inline-block;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    width: 60em;
   }
   
   .drop-zone {
