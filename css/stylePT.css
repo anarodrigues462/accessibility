@@ -3,9 +3,17 @@ body {
     text-align: center;
   }
   
+  #title-container {
+    margin: 1em;
+    font-size: 2em;
+  }
+  
   #text-container {
-    margin: 20px;
-    font-size: 1.2em;
+    display: inline-block;
+    text-align: left;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    width: 40em;
   }
   
   .drop-zone {
