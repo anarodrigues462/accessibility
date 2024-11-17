@@ -3,7 +3,7 @@ function updateContent(langData) {
         const key = element.getAttribute('data-i18n');
         element.innerHTML = langData[key];
     });
-}
+} //elementos para traduzir
 
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
@@ -20,26 +20,26 @@ async function changeLanguage(lang) {
     
     const langData = await fetchLanguageData(lang);
     updateContent(langData);
-    togglePortugueseStylesheet(lang); // Toggle Portuguese stylesheet
+    togglePortugueseStylesheet(lang); 
 }
 
-// Function to toggle Portuguese stylesheet based on language selection
+// alterar o css
 function togglePortugueseStylesheet(lang) {
     const head = document.querySelector('head');
     const link = document.querySelector('#styles-link');
 
     if (link) {
-        head.removeChild(link); // Remove the old stylesheet link
+        head.removeChild(link); 
     } else if (lang === 'pt') {
         const newLink = document.createElement('link');
         newLink.id = 'styles-link';
         newLink.rel = 'stylesheet';
-        newLink.href = 'css/stylePT.css'; // Path to Portuguese stylesheet
+        newLink.href = 'css/stylePT.css'; 
         head.appendChild(newLink);
     }
 }
 
-// Call updateContent() on page load
+// 
 window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'en';
     const langData = await fetchLanguageData(userPreferredLanguage);
@@ -47,7 +47,42 @@ window.addEventListener('DOMContentLoaded', async () => {
     togglePortugueseStylesheet(userPreferredLanguage);
 });
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
+function toggleTheme() {
+    const body = document.body;
+    const currentTheme = body.getAttribute("data-theme");
+    const themeIcon = document.getElementById("theme-icon");
+    const themeText = document.getElementById("theme-text");
+
+    if (currentTheme === "dark") {
+        body.setAttribute("data-theme", "light");
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+        themeText.textContent = "Modo Escuro"; // Texto para o tema claro
+        localStorage.setItem("theme", "light");
+    } else {
+        body.setAttribute("data-theme", "dark");
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+        themeText.textContent = "Modo Claro"; // Texto para o tema escuro
+        localStorage.setItem("theme", "dark");
+    }
+}
+
+// Recupera o tema salvo ao carregar a página
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "light";
+    document.body.setAttribute("data-theme", savedTheme);
+
+    // Atualiza o ícone e o texto conforme o tema carregado
+    const themeIcon = document.getElementById("theme-icon");
+    const themeText = document.getElementById("theme-text");
+    if (savedTheme === "dark") {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+        themeText.textContent = "Modo Claro"; // Texto para o tema escuro
+    } else {
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+        themeText.textContent = "Modo Escuro"; // Texto para o tema claro
+    }
+});
