@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
     <nav aria-label="main menu">
         <ul class="navbar">
             <li>
@@ -25,19 +26,24 @@
             </li>
             <li class="spacer"></li>
             <li>
-                <button onclick="toggleTheme()" id="button_mode" aria-label="alterar tema">
+                <button onclick="toggleTheme()" id="button_mode" aria-label="tema" title="mudar tema">
                     <i id="theme-icon" class="fas fa-sun"></i>
                     <span id="theme-text">Modo Escuro</span>
                 </button>
             </li>
         </ul>
     </nav>
-    <main>
 
+    <header>
         <h1 id="title-container" data-i18n="welcome-message">Middle school student with attention deficit hyperactivity
             disorder and dyslexia</h1>
-        <p id="text-container" data-i18n="text">Pretty is a middle school student with attention deficit hyperactivity
-            disorder with dyslexia.</p>
+    </header>
+    <main>
+        <section>
+            <p id="text-container" data-i18n="text">Pretty is a middle school student with attention deficit hyperactivity
+                disorder with dyslexia.</p>
+        </section>
+        
     </main>
 </body>
 
