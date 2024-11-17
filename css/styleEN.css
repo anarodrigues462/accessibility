@@ -20,7 +20,9 @@ body {
 
 @media (max-width: 600px) {
   #text-container {
-      width: 20em; /* Reduz a fonte para telas menores */
+    display:inline-block;
+    text-align: left;
+    max-width: 20em;
   }
 }
 

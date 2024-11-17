@@ -17,3 +17,10 @@ body {
     width: 40em;
   }
   
+  @media (max-width: 600px) {
+    #text-container {
+      display:inline-block;
+      text-align: left;
+      max-width: 20em;
+    }
+  }
