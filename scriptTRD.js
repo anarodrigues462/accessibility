@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function changeSizeBySlider() {
     let slider = document.getElementById("slider");
-    let TitleCont = document.getElementById("title-container");
+
     let TextCont = document.getElementById("text-container");
     // Set slider value as fontSize
-    TitleCont.style.fontSize = slider.value + "em";
+
     TextCont.style.fontSize = slider.value + "em";
 }
