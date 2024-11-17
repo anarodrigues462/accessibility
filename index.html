@@ -26,6 +26,8 @@
             <li>
                 <a href="jogos.html" id="name-menu" data-i18n="name-menu-games">Games</a>
             </li>
+
+            
             <li class="spacer"></li>
             <li>
                 <button onclick="toggleTheme()" id="button_mode" aria-label="tema" title="mudar tema">
@@ -35,7 +37,7 @@
             </li>
         </ul>
     </nav>
-
+    
     <header>
         <h1 id="title-container" data-i18n="welcome-message">Middle school student with attention deficit hyperactivity
             disorder and dyslexia</h1>
@@ -47,6 +49,8 @@
         </section>
         
     </main>
+
+    <input type="range" min="1" max="2" step="0.1" id="slider" value="1.5" onchange="changeSizeBySlider()" />
 </body>
 
 </html>

@@ -12,6 +12,7 @@ body {
     display: inline-block;
     text-align: left;
     letter-spacing: 0.1em;
+    font-size: 1em;
     line-height: 2em;
     width: 40em;
   }
