@@ -20,27 +20,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilo básico do link de salto
-.skip-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    padding: 0.5em 1em;
-    background: #0078d4;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 4px;
-    transform: translateY(-100%); /* Inicialmente escondido 
-    transition: transform 0.3s ease;
-}   
 
-/* Torna o link visível ao receber foco 
-.skip-link:focus {
-    transform: translateY(0);
-    outline: 2px solid #ffffff; /* Destaque adicional para acessibilidade 
-} */
 
 .navbar {
     display: flex;
