@@ -20,7 +20,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilo básico do link de salto */
+/* Estilo básico do link de salto
 .skip-link {
     position: absolute;
     top: 0;
@@ -32,15 +32,15 @@ body {
     text-decoration: none;
     font-size: 1rem;
     border-radius: 4px;
-    transform: translateY(-100%); /* Inicialmente escondido */
+    transform: translateY(-100%); /* Inicialmente escondido 
     transition: transform 0.3s ease;
 }   
 
-/* Torna o link visível ao receber foco */
+/* Torna o link visível ao receber foco 
 .skip-link:focus {
     transform: translateY(0);
-    outline: 2px solid #ffffff; /* Destaque adicional para acessibilidade */
-}
+    outline: 2px solid #ffffff; /* Destaque adicional para acessibilidade 
+} */
 
 .navbar {
     display: flex;
@@ -72,7 +72,7 @@ body {
 
 .navbar > li > a:focus,
 .navbar > li > a:hover {
-    background-color: #000;
+    background-color: #777;
     color: #fff; 
     outline: 0.1em solid #fff; 
 }
