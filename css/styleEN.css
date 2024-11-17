@@ -1,8 +1,7 @@
 body {
   font-family: 'Montserrat';
   text-align: center;
-  font-size: 1em;
-  width:100%;
+  
 }
 
 #title-container {
@@ -16,28 +15,12 @@ body {
   letter-spacing: 0.1em;
   line-height: 2em;
   font-size: 1em;
-  width: 10%;
+  width: 40em;
 }
 
-.drop-zone {
-  display: inline-block;
-  width: 10px;
-  padding: 5px;
-  margin: 0 5px;
-  border-bottom: 2px solid #333;
-}
-
-#word-bank {
-  margin-top: 20px;
-}
-
-.draggable {
-  display: inline-block;
-  padding: 10px;
-  margin: 5px;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 4px;
-  cursor: move;
+@media (max-width: 600px) {
+  #text-container {
+      width: 20em; /* Reduz a fonte para telas menores */
+  }
 }
 
