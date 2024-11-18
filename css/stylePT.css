@@ -10,11 +10,12 @@ body {
   
   #text-container {
     display: inline-block;
+    visibility: visible;
     text-align: left;
     letter-spacing: 0.1em;
     font-size: 1em;
     line-height: 2em;
-    width: 40em;
+    max-width: 50%;
   }
   
   @media (max-width: 600px) {

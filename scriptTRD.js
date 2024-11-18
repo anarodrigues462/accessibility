@@ -97,3 +97,44 @@ function changeSizeBySlider() {
 
     TextCont.style.fontSize = slider.value + "em";
 }
+
+
+function changeVisible() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container1");
+    const eyeIcon = document.getElementById("eye-icon");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+// Restaurar estado ao carregar a página
+window.onload = () => {
+    const savedVisibility = localStorage.getItem("visibility");
+    const textContainer = document.getElementById("text-container1");
+    const eyeIcon = document.getElementById("eye-icon");
+
+    if (savedVisibility === "hidden") {
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+    } else {
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+    }
+};

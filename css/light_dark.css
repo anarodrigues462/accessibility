@@ -84,3 +84,13 @@ body {
 #imagephda{
     width: 20%;
 }
+
+.textSize{
+    display:inline-flex;
+    padding: 0.5em;
+}
+
+.textSize1{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
