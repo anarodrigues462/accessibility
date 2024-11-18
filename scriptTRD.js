@@ -99,7 +99,7 @@ function changeSizeBySlider() {
 }
 
 
-function changeVisible() {
+function changeVisible1() {
     // Selecionar os elementos relevantes
     const textContainer = document.getElementById("text-container1");
     const eyeIcon = document.getElementById("eye-icon");
