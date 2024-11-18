@@ -3,7 +3,7 @@ function updateContent(langData) {
         const key = element.getAttribute('data-i18n');
         element.innerHTML = langData[key];
     });
-} //elementos para traduzir
+}
 
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
@@ -57,33 +57,32 @@ function toggleTheme() {
         body.setAttribute("data-theme", "light");
         themeIcon.classList.remove("fa-sun");
         themeIcon.classList.add("fa-moon");
-        themeText.textContent = "Modo Escuro"; // Texto para o tema claro
+        themeText.textContent = "Modo Escuro"; 
         localStorage.setItem("theme", "light");
     } else {
         body.setAttribute("data-theme", "dark");
         themeIcon.classList.remove("fa-moon");
         themeIcon.classList.add("fa-sun");
-        themeText.textContent = "Modo Claro"; // Texto para o tema escuro
+        themeText.textContent = "Modo Claro"; 
         localStorage.setItem("theme", "dark");
     }
 }
 
-// Recupera o tema salvo ao carregar a página
 document.addEventListener("DOMContentLoaded", () => {
     const savedTheme = localStorage.getItem("theme") || "light";
     document.body.setAttribute("data-theme", savedTheme);
 
-    // Atualiza o ícone e o texto conforme o tema carregado
+
     const themeIcon = document.getElementById("theme-icon");
     const themeText = document.getElementById("theme-text");
     if (savedTheme === "dark") {
         themeIcon.classList.remove("fa-moon");
         themeIcon.classList.add("fa-sun");
-        themeText.textContent = "Modo Claro"; // Texto para o tema escuro
+        themeText.textContent = "Modo Claro";
     } else {
         themeIcon.classList.remove("fa-sun");
         themeIcon.classList.add("fa-moon");
-        themeText.textContent = "Modo Escuro"; // Texto para o tema claro
+        themeText.textContent = "Modo Escuro";
     }
 });
 
@@ -93,28 +92,26 @@ function changeSizeBySlider() {
     let slider = document.getElementById("slider");
 
     let TextCont = document.getElementById("text-container");
-    // Set slider value as fontSize
 
     TextCont.style.fontSize = slider.value + "em";
 }
 
 
-function changeVisible1() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container1");
-    const eyeIcon = document.getElementById("eye-icon1");
+function changeVisible(textId, iconId) {
 
-    // Obter o estado atual da visibilidade
+    const textContainer = document.getElementById(textId);
+    const eyeIcon = document.getElementById(iconId);
+
     const isVisible = textContainer.style.visibility !== 'hidden';
 
     if (isVisible) {
-        // Tornar invisível
+
         textContainer.style.visibility = 'hidden';
         eyeIcon.classList.remove("fa-eye");
         eyeIcon.classList.add("fa-eye-slash");
         localStorage.setItem("visibility", "hidden");
     } else {
-        // Tornar visível
+ 
         textContainer.style.visibility = 'visible';
         eyeIcon.classList.remove("fa-eye-slash");
         eyeIcon.classList.add("fa-eye");
@@ -122,122 +119,6 @@ function changeVisible1() {
     }
 }
 
-function changeVisible2() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container2");
-    const eyeIcon = document.getElementById("eye-icon2");
-
-    // Obter o estado atual da visibilidade
-    const isVisible = textContainer.style.visibility !== 'hidden';
-
-    if (isVisible) {
-        // Tornar invisível
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-        localStorage.setItem("visibility", "hidden");
-    } else {
-        // Tornar visível
-        textContainer.style.visibility = 'visible';
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-        localStorage.setItem("visibility", "visible");
-    }
-}
-
-function changeVisible3() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container3");
-    const eyeIcon = document.getElementById("eye-icon3");
-
-    // Obter o estado atual da visibilidade
-    const isVisible = textContainer.style.visibility !== 'hidden';
-
-    if (isVisible) {
-        // Tornar invisível
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-        localStorage.setItem("visibility", "hidden");
-    } else {
-        // Tornar visível
-        textContainer.style.visibility = 'visible';
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-        localStorage.setItem("visibility", "visible");
-    }
-}
-
-function changeVisible3() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container3");
-    const eyeIcon = document.getElementById("eye-icon3");
-
-    // Obter o estado atual da visibilidade
-    const isVisible = textContainer.style.visibility !== 'hidden';
-
-    if (isVisible) {
-        // Tornar invisível
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-        localStorage.setItem("visibility", "hidden");
-    } else {
-        // Tornar visível
-        textContainer.style.visibility = 'visible';
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-        localStorage.setItem("visibility", "visible");
-    }
-}
-
-function changeVisible4() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container4");
-    const eyeIcon = document.getElementById("eye-icon4");
-
-    // Obter o estado atual da visibilidade
-    const isVisible = textContainer.style.visibility !== 'hidden';
-
-    if (isVisible) {
-        // Tornar invisível
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-        localStorage.setItem("visibility", "hidden");
-    } else {
-        // Tornar visível
-        textContainer.style.visibility = 'visible';
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-        localStorage.setItem("visibility", "visible");
-    }
-}
-
-function changeVisible5() {
-    // Selecionar os elementos relevantes
-    const textContainer = document.getElementById("text-container5");
-    const eyeIcon = document.getElementById("eye-icon5");
-
-    // Obter o estado atual da visibilidade
-    const isVisible = textContainer.style.visibility !== 'hidden';
-
-    if (isVisible) {
-        // Tornar invisível
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-        localStorage.setItem("visibility", "hidden");
-    } else {
-        // Tornar visível
-        textContainer.style.visibility = 'visible';
-        eyeIcon.classList.remove("fa-eye-slash");
-        eyeIcon.classList.add("fa-eye");
-        localStorage.setItem("visibility", "visible");
-    }
-}
-
-// Restaurar estado ao carregar a página
 window.onload = () => {
     const savedVisibility = localStorage.getItem("visibility");
     const textContainer = document.getElementById("text-container1");
