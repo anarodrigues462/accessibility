@@ -94,3 +94,17 @@ body {
     padding-right: 0.5em;
     padding-left: 0.5em;
 }
+
+#section1, #section2, #section3, #section4, #section5{
+    display: inline-flex;
+}
+
+#eye-button1, #eye-button2, #eye-button3, #eye-button4, #eye-button5{
+    background: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-right: 1.5em;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}

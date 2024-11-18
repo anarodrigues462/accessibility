@@ -102,7 +102,122 @@ function changeSizeBySlider() {
 function changeVisible1() {
     // Selecionar os elementos relevantes
     const textContainer = document.getElementById("text-container1");
-    const eyeIcon = document.getElementById("eye-icon");
+    const eyeIcon = document.getElementById("eye-icon1");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+function changeVisible2() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container2");
+    const eyeIcon = document.getElementById("eye-icon2");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+function changeVisible3() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container3");
+    const eyeIcon = document.getElementById("eye-icon3");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+function changeVisible3() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container3");
+    const eyeIcon = document.getElementById("eye-icon3");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+function changeVisible4() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container4");
+    const eyeIcon = document.getElementById("eye-icon4");
+
+    // Obter o estado atual da visibilidade
+    const isVisible = textContainer.style.visibility !== 'hidden';
+
+    if (isVisible) {
+        // Tornar invisível
+        textContainer.style.visibility = 'hidden';
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+        localStorage.setItem("visibility", "hidden");
+    } else {
+        // Tornar visível
+        textContainer.style.visibility = 'visible';
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+        localStorage.setItem("visibility", "visible");
+    }
+}
+
+function changeVisible5() {
+    // Selecionar os elementos relevantes
+    const textContainer = document.getElementById("text-container5");
+    const eyeIcon = document.getElementById("eye-icon5");
 
     // Obter o estado atual da visibilidade
     const isVisible = textContainer.style.visibility !== 'hidden';

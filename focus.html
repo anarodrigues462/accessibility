@@ -16,16 +16,10 @@
 <body>
     <nav aria-label="main menu">
         <ul class="navbar">
-
-            <li class="spacer"></li>
-
+            <li>
+                <a href="index.html" id="back" data-i18n="back" onclick="changeLanguage('en')">Back</a>
+            </li>
         </ul>
-    </nav>
-
-    <nav aria-label="for text size" class="textSize">
-        <h2 class="textSize1">-a</h2><input type="range" min="1" max="2" step="0.1" id="slider" value="1.5"
-            onchange="changeSizeBySlider()" />
-        <h2 class="textSize1">+A</h2>
     </nav>
 
     <header>
@@ -33,26 +27,41 @@
     </header>
     <main>
         <section id="text-container">
-            <button onclick="changeVisible1()" id="eye-button" aria-label="change visible" title="change visible">
-                <i id="eye-icon" class="fas fa-eye"></i>
-            </button>
-            <p id="text-container1" data-i18n="text1"></p>
-            <button onclick="changeVisible2()" id="eye-button" aria-label="change visible" title="change visible">
-                <i id="eye-icon" class="fas fa-eye"></i>
-            </button>
-            <p id="text-container2" data-i18n="text2"></p>
-            <button onclick="changeVisible3()" id="eye-button" aria-label="change visible" title="change visible">
-                <i id="eye-icon" class="fas fa-eye"></i>
-            </button>
-            <p id="text-container3" data-i18n="text3"></p>
-            <button onclick="changeVisible4()" id="eye-button" aria-label="change visible" title="change visible">
-                <i id="eye-icon" class="fas fa-eye"></i>
-            </button>
-            <p id="text-container4" data-i18n="text4"></p>
-            <button onclick="changeVisible5()" id="eye-button" aria-label="change visible" title="change visible">
-                <i id="eye-icon" class="fas fa-eye"></i>
-            </button>
-            <p id="text-container5" data-i18n="text5"></p>
+            <div id="section1">
+                <button onclick="changeVisible1()" id="eye-button1" aria-label="change visible" title="change visible">
+                    <i id="eye-icon1" class="fas fa-eye"></i>
+                </button>
+                <p id="text-container1" data-i18n="text1"></p>
+            </div>
+            
+            <div id="section2">
+                <button onclick="changeVisible2()" id="eye-button2" aria-label="change visible" title="change visible">
+                    <i id="eye-icon2" class="fas fa-eye"></i>
+                </button>
+                <p id="text-container2" data-i18n="text2"></p>
+            </div>
+            
+            <div id="section3">
+                <button onclick="changeVisible3()" id="eye-button3" aria-label="change visible" title="change visible">
+                    <i id="eye-icon3" class="fas fa-eye"></i>
+                </button>
+                <p id="text-container3" data-i18n="text3"></p>
+            </div>
+            
+            <div id="section3">
+                <button onclick="changeVisible4()" id="eye-button4" aria-label="change visible" title="change visible">
+                    <i id="eye-icon4" class="fas fa-eye"></i>
+                </button>
+                <p id="text-container4" data-i18n="text4"></p>
+            </div>
+            
+            <div id="section5">
+                <button onclick="changeVisible5()" id="eye-button5" aria-label="change visible" title="change visible">
+                    <i id="eye-icon5" class="fas fa-eye"></i>
+                </button>
+                <p id="text-container5" data-i18n="text5"></p>
+            </div>
+            
         </section>
 
 
