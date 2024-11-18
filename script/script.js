@@ -23,7 +23,6 @@ async function changeLanguage(lang) {
     togglePortugueseStylesheet(lang); 
 }
 
-// alterar o css
 function togglePortugueseStylesheet(lang) {
     const head = document.querySelector('head');
     const link = document.querySelector('#styles-link');
@@ -39,7 +38,6 @@ function togglePortugueseStylesheet(lang) {
     }
 }
 
-// 
 window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'en';
     const langData = await fetchLanguageData(userPreferredLanguage);
@@ -86,8 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-
-
 function changeSizeBySlider() {
     let slider = document.getElementById("slider");
 
@@ -95,7 +91,6 @@ function changeSizeBySlider() {
 
     TextCont.style.fontSize = slider.value + "em";
 }
-
 
 function changeVisible(textId, iconId) {
 
