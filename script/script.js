@@ -244,10 +244,6 @@ window.onload = () => {
     const eyeIcon = document.getElementById("eye-icon");
 
     if (savedVisibility === "hidden") {
-        textContainer.style.visibility = 'hidden';
-        eyeIcon.classList.remove("fa-eye");
-        eyeIcon.classList.add("fa-eye-slash");
-    } else {
         textContainer.style.visibility = 'visible';
         eyeIcon.classList.remove("fa-eye-slash");
         eyeIcon.classList.add("fa-eye");

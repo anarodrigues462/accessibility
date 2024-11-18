@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #000000;
+    --menu-bg-color: #000000; 
+    --menu-text-color: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --menu-bg-color: #f0f0f0; 
+    --menu-text-color: #000000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Montserrat";
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: var(--menu-bg-color);
+    color: var(--menu-text-color);
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.navbar > li {
+    position: relative;
+}
+
+.navbar > li > a {
+    display: block;
+    padding: 1.5em 1.2em;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--menu-text-color); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar > li > a:focus,
+.navbar > li > a:hover {
+    background-color: #777777bb;
+    color: #fff; 
+    outline: 0.2em solid #fff; 
+}
+
+#button_mode {
+    background: var(--menu-bg-color);
+    border: none;
+    cursor: pointer;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--menu-text-color);
+    font-family: 'Montserrat';
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin-left: 5em;
+    
+}
+
+#button_mode:hover,
+#button_mode:focus {
+    background-color: #777777bb;
+    color: #fff; 
+    outline: 0.2em solid #fff; 
+}
+
+#theme-icon{
+    margin-right: 0.5em;
+}
+
+#imagephda{
+    width: 20%;
+}
+
+.textSize{
+    display:inline-flex;
+    padding: 0.5em;
+}
+
+.textSize1{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#section1, #section2, #section3, #section4, #section5{
+    display: inline-flex;
+}
+
+#eye-button1, #eye-button2, #eye-button3, #eye-button4, #eye-button5{
+    background: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-right: 1.5em;
+    font-size: 1.5em;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
