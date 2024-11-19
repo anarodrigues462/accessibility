@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #dfdede;
+    --bg-color: #e6e6e6;
     --text-color: #000000;
     --menu-bg-color: #000000; 
     --menu-text-color: #ffffff;
@@ -149,4 +149,10 @@ body {
 #decrease-text, #increase-text{
     font-size: 2em;
     font-weight: 600;
+}
+
+button:focus, a:focus {
+    outline: 2px solid #005fcc; /* Cor de destaque */
+    outline-offset: 4px;
+    border-radius: 4px;
 }

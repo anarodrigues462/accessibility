@@ -1,3 +1,4 @@
+//mudar o idioma
 function updateContent(langData) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -45,6 +46,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     togglePortugueseStylesheet(userPreferredLanguage);
 });
 
+//mudar a cor
 function toggleTheme() {
     const body = document.body;
     const currentTheme = body.getAttribute("data-theme");
@@ -84,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+//mudar tamanho de texto
 function changeSizeBySlider() {
     let slider = document.getElementById("slider");
 
@@ -92,6 +95,7 @@ function changeSizeBySlider() {
     TextCont.style.fontSize = slider.value + "em";
 }
 
+//visibilidade do texto
 function changeVisible(textId, iconId) {
 
     const textContainer = document.getElementById(textId);
@@ -131,3 +135,40 @@ window.onload = () => {
         eyeIcon.classList.add("fa-eye");
     }
 };
+
+//navegação por tecla
+document.addEventListener('keydown', function (event) {
+    const activeElement = document.activeElement;
+
+    if (event.key === 'Enter' || event.key === ' ') {
+        if (activeElement.tagName === 'BUTTON' || activeElement.tagName === 'A') {
+            activeElement.click();
+        }
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('modal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    const navItems = document.querySelectorAll('.navbar a');
+    const navArray = Array.from(navItems);
+    const currentIndex = navArray.indexOf(document.activeElement);
+
+    if (event.key === 'ArrowRight' && currentIndex >= 0) {
+        const nextIndex = (currentIndex + 1) % navArray.length;
+        navArray[nextIndex].focus();
+    }
+
+    if (event.key === 'ArrowLeft' && currentIndex >= 0) {
+        const prevIndex = (currentIndex - 1 + navArray.length) % navArray.length;
+        navArray[prevIndex].focus();
+    }
+});
+

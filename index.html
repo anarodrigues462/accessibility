@@ -19,18 +19,18 @@
         <ul class="navbar" role="menu">
             <li>
                 <a href="index.html" id="name-menu-en" data-i18n="name-menu-en"
-                    onclick="changeLanguage('en')">English</a>
+                tabindex="0" onclick="changeLanguage('en')">English</a>
             </li>
             <li >
                 <a href="index.html" id="name-menu-pt" data-i18n="name-menu-pt"
-                    onclick="changeLanguage('pt')">Português</a>
+                tabindex="0" onclick="changeLanguage('pt')">Português</a>
             </li>
             <li>
-                <a href="focus.html" id="name-menu" data-i18n="name-menu-focus">Focus Mode</a>
+                <a href="focus.html" id="name-menu" data-i18n="name-menu-focus" tabindex="0">Focus Mode</a>
             </li>
             <li class="spacer" aria-hidden="true"></li>
             <li>
-                <button onclick="toggleTheme()" id="button_mode" aria-label="tema" title="mudar modo">
+                <button onclick="toggleTheme()" id="button_mode" aria-label="tema" title="mudar modo" tabindex="0">
                     <i id="theme-icon" class="fas fa-sun" aria-hidden="true"></i>
                     <span id="theme-text">Modo Escuro</span>
                 </button>
@@ -57,9 +57,6 @@
         <div>
             <img src="images/phda.svg" alt="illustration of a girl with ADHD" id="imagephda">
         </div>
-
-        
-
     </main>
 
 
