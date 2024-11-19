@@ -89,11 +89,20 @@ document.addEventListener("DOMContentLoaded", () => {
 //mudar tamanho de texto
 function changeSizeBySlider() {
     let slider = document.getElementById("slider");
-
     let TextCont = document.getElementById("text-container");
+    const fontSize = slider.value;
 
     TextCont.style.fontSize = slider.value + "em";
+
+    localStorage.setItem('fontSize', fontSize);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const savedFontSize = localStorage.getItem('fontSize'); 
+    if (savedFontSize) {
+        document.getElementById("text-container").style.fontSize = savedFontSize + 'em'; 
+    }
+});
 
 //visibilidade do texto
 function changeVisible(textId, iconId) {
