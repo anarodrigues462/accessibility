@@ -1,8 +1,9 @@
 :root {
-    --bg-color: #f0f0f0;
+    --bg-color: #dfdede;
     --text-color: #000000;
     --menu-bg-color: #000000; 
     --menu-text-color: #ffffff;
+    --menu-focus-bg-color: #acacac;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
     --text-color: #ffffff;
     --menu-bg-color: #f0f0f0; 
     --menu-text-color: #000000;
+    --menu-focus-bg-color: #888888;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     padding: 0;
     margin: 0;
     transition: background-color 0.3s, color 0.3s;
+    font-weight: 450;
 }
 
 .spacer {
@@ -49,6 +52,39 @@ body {
 
 .navbar > li > a:focus,
 .navbar > li > a:hover {
+    background-color: #777777bb;
+    color: #fff; 
+    outline: 0.2em solid #fff; 
+}
+
+.navbarFocus {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: var(--menu-focus-bg-color);
+    color: var(--menu-text-color);
+    padding: 0;
+    margin: 0;
+    width:4.5%;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 450;
+}
+
+.navbarFocus > li {
+    position: relative;
+}
+
+.navbarFocus > li > a {
+    display: block;
+    padding: 1.5em 1.2em;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--menu-text-color); 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbarFocus > li > a:focus,
+.navbarFocus > li > a:hover {
     background-color: #777777bb;
     color: #fff; 
     outline: 0.2em solid #fff; 
