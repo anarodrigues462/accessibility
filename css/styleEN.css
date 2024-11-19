@@ -21,6 +21,10 @@ body {
   font-weight: 450;
 }
 
+#text-container1, #text-container2, #text-container3, #text-container4, #text-container5 {
+  padding-bottom: 2.5em;
+}
+
 @media (max-width: 600px) {
   #text-container {
     display:inline-block;
