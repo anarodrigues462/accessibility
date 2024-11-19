@@ -96,6 +96,7 @@ function changeVisible(textId, iconId) {
 
     const textContainer = document.getElementById(textId);
     const eyeIcon = document.getElementById(iconId);
+    const assistiveReader = document.getElementById("assistive-reader");
 
     const isVisible = textContainer.style.visibility !== 'hidden';
 
@@ -111,6 +112,11 @@ function changeVisible(textId, iconId) {
         eyeIcon.classList.remove("fa-eye-slash");
         eyeIcon.classList.add("fa-eye");
         localStorage.setItem("visibility", "visible");
+    }
+    if (textElement.style.visibility === 'visible') {
+        assistiveReader.textContent = textElement.textContent;
+    } else {
+        assistiveReader.textContent = "Content hidden";
     }
 }
 
