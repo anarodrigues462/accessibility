@@ -90,6 +90,15 @@ body {
     outline: 0.2em solid #fff; 
 }
 
+#footer-bar{
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    background-color: var(--menu-bg-color);
+    color: var(--menu-bg-color);
+    z-index: 1000;
+}
+
 #button_mode {
     background: var(--menu-bg-color);
     border: none;
